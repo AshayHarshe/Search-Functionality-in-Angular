@@ -1,0 +1,173 @@
+// colour used : rgb(95, 5, 179) , #19195B , #F2F2F2 , white , rgb(69, 68, 68) , 
+
+
+.nav-link {
+    font-size: 35px;
+    font-weight: 800;
+    color: rgb(95, 5, 179);
+}
+
+// |------------------- card code start -------------------|
+
+.card {
+    background-color: #F2F2F2;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 360px;
+    height: 350px;
+    border: 1px solid white;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.7s;
+}
+.card:hover {
+    box-shadow: 3px 3px 10px rgb(69, 68, 68);
+}
+.card-img-top-n {
+    width: 340px;
+    height: 200px;
+    border-radius: 10px;
+    align-items: center;
+    margin-top: 10px;
+
+}
+.product-name {
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #19195B;
+}
+.card-price-n {
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: -10px;
+    margin-left: 20px;
+    color: #19195B;
+}
+.product-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2%;
+}
+
+// |------------------- card code end -------------------|
+
+
+// |------------------- laptop view start -------------------|
+
+
+@media only screen and (max-width: 1025px) {
+    .card {
+        width: 300px;
+        height: 350px;
+        border: 1px solid white;
+        border-radius: 15px;
+        text-align: center;
+        transition: 0.7s;
+        margin-left: -7%;
+    }
+    .card-img-top-n {
+        width: 300px;
+        height: 200px;
+        border-radius: 10px;
+        align-items: center;
+        margin-top: 10px;
+
+    }
+}
+
+// |------------------- laptop view end -------------------|
+
+
+// |------------------- tab view start -------------------|
+
+
+@media only screen and (max-width: 769px) {
+    .nav-link {
+        margin-left: 20%;
+    }
+    .card {
+        width: 300px;
+        height: 350px;
+        border: 1px solid white;
+        border-radius: 15px;
+        text-align: center;
+        transition: 0.7s;
+        margin-left: 0%;
+    }
+    .card-img-top-n {
+        width: 300px;
+        height: 200px;
+        border-radius: 10px;
+        align-items: center;
+        margin-top: 10px;
+
+    }
+    .form-control {
+        width: 155%;
+        margin-left: -150%;
+    }
+}
+
+
+// |------------------- tab view end -------------------|
+
+
+
+// |------------------- mobile view start -------------------|
+
+@media only screen and (max-width: 426px) {
+    .card {
+       
+        margin-left: 5%;
+    }
+    .nav-link {
+        font-size: 35px;
+        font-weight: 800;
+        color: rgb(95, 5, 179);
+        margin-left: 2%;
+    }
+    .form-control {
+        width: 155%;
+        margin-left: -80%;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .card {
+       
+        margin-left: 2%;
+    }
+    .nav-link {
+        font-size: 35px;
+        font-weight: 800;
+        color: rgb(95, 5, 179);
+        margin-left: 2%;
+    }
+    .form-control {
+        width: 145%;
+        margin-left: -57%;
+    }
+}
+@media only screen and (max-width: 321px) {
+    .card {
+       
+        margin-left: -7%;
+    }
+    .nav-link {
+        font-size: 35px;
+        font-weight: 800;
+        color: rgb(95, 5, 179);
+        margin-left: -2%;
+    }
+    .form-control {
+        width: 125%;
+        margin-left: -30%;
+    }
+}
+
+// |------------------- mobile view end -------------------|

@@ -1,0 +1,49 @@
+
+
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">EVENT MANAGEMENT</a>
+          </li>        
+        </ul>
+        <div class="d-flex">
+          <ul class="navbar-nav ms-auto">
+            <li>
+              <input type="text" [(ngModel)]="searchtext" class="form-control" placeholder="Search the event">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+<br><br><br>
+ <!-- card start -->
+<div class="container">
+  <div class="row product-card">
+    <div class="col-lg-4 col-md-6 col-12" *ngFor="let item of HproductData | filter:searchtext">
+      <div class="card">
+        <div class="row">
+          <div class="col">
+            <img class="card-img-top-n" src="{{item.img}}" alt="Card image">
+          </div>
+          <div class="col">
+            <p class="product-name">Name : {{item.fullName}}</p>
+            <p class="card-price-n">Topic : {{item.topic}}</p>
+            <p class="card-price-n"> Date : {{item.date}}</p>
+            <p class="card-price-n"> Time : {{item.time}}</p>
+            <p class="card-price-n"> Venue : {{item.venue}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- card end -->

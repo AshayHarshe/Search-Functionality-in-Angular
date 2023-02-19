@@ -1,0 +1,71 @@
+// color used : rgb(236, 236, 236) , blueviolet , rgb(236, 236, 236)
+
+
+// |------------------- laptop view start ---------------------|
+.abc {
+    width: 60%;
+    margin-top: 5%;
+    margin-left: 20%;
+    background-color: rgb(236, 236, 236);
+    border-radius: 5%;
+}
+.abc h4 {
+    text-align: center;
+   padding-top: 3%;
+   color: blueviolet;
+}
+.card-body {
+    padding: 10%;
+}
+label {
+    font-weight: 600;
+}
+input {
+    margin-bottom: 2%;
+}
+.form-group button{
+    margin-top: 2%;
+}
+.form-group a{
+    margin-top: 2%;
+}
+// |------------------- laptop view end ---------------------|
+
+
+// |------------------- tab view start ---------------------|
+@media only screen and (max-width: 769px) {
+    .abc {
+        width: 80%;
+        margin-top: 10;
+        margin-left: 10%;
+        background-color: rgb(236, 236, 236);
+        border-radius: 5%;
+    }
+}
+// |------------------- tab view end --------------------------|
+
+
+
+// |------------------- mobile view start ---------------------|
+@media only screen and (max-width: 426px) {
+    .abc {
+        width: 100%;
+        margin-top: 10;
+        margin-left: 1%;
+        background-color: rgb(236, 236, 236);
+        border-radius: 5%;
+    }
+}
+@media only screen and (max-width: 378px) {
+    .abc {
+        width: 100%;
+        margin-top: 10;
+        margin-left: 1%;
+        background-color: rgb(236, 236, 236);
+        border-radius: 5%;
+    }
+    label {
+        margin-left: 2%;
+    }
+}
+// |------------------- mobile view start ---------------------|
